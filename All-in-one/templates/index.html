@@ -1,0 +1,59 @@
+{% extends 'reUsable/NavBar.html' %}
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+{% block title %}
+
+Home Page
+
+{% endblock %}
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+{% block container %}
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+<script>
+    if({{flag}}=='1'){
+    alert("{{msg}}");
+    }
+    console.log("hii")
+</script>
+<div class="row">
+    <div class="col-md-3 g-2 mx-4">
+        <div class="card" style="width: 12rem;">
+          <img src="static\projects_static\brain_stroke.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brain Stroke Prediction</h5>
+             <a href="/brain_stroke" class="btn btn-primary">Predict</a>
+          </div>
+        </div>
+    </div>
+
+        <div class="col-md-3 g-2">
+        <div class="card" style="width: 12rem;">
+          <img src="static\projects_static\cirrhosis.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cirrhosis Prediction</h5>
+             <a href="/cirrhosis" class="btn btn-primary">Predict</a>
+          </div>
+        </div>
+    </div>
+
+<!--        <div class="col-md-3 g-2 ">-->
+<!--        <div class="card" style="width: 12rem;">-->
+<!--          <img src="static\projects_static\brain_stroke.jpg" class="card-img-top" alt="...">-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">Brain Stroke Prediction</h5>-->
+<!--             <a href="/brain_stroke" class="btn btn-primary">Predict</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+{% endblock %}
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
